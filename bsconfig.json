@@ -1,10 +1,20 @@
 {
-  "name": "dependently-typed-lambda-calc",
-  "sources": "src",
-  "bs-dependencies": [],
-  "entries": [{
-    "backend": "native",
-    "main-module": "Main"
-  }],
-  "refmt": 3
+	"name": "dependently-typed-lambda-calc",
+	"sources": "src",
+	"bs-dependencies": [],
+	"entries": [
+		{
+			"backend": "native",
+			"main-module": "Main"
+		},
+		{
+			"backend": "bytecode",
+			"main-module": "MainBytecode"
+		},
+		{
+			"backend": "js",
+			"main-module": "Main"
+		}
+	],
+	"refmt": 3
 }
